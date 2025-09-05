@@ -1,0 +1,29 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/home/datweneb/ece592/hw1/extra_testing/128.py", line 5, in <module>
+    df = pd.read_csv("avx_timing_50ms.csv")
+  File "/home/datweneb/ece592/hw1/venv/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/datweneb/ece592/hw1/venv/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/datweneb/ece592/hw1/venv/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/datweneb/ece592/hw1/venv/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/datweneb/ece592/hw1/venv/lib64/python3.9/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'avx_timing_50ms.csv'
+Traceback (most recent call last):
+  File "/home/datweneb/ece592/hw1/extra_testing/512.py", line 9, in <module>
+    df = pd.read_csv("avx512_timing_50ms.csv")
+  File "/home/datweneb/ece592/hw1/venv/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/datweneb/ece592/hw1/venv/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/datweneb/ece592/hw1/venv/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/datweneb/ece592/hw1/venv/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/datweneb/ece592/hw1/venv/lib64/python3.9/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'avx512_timing_50ms.csv'
